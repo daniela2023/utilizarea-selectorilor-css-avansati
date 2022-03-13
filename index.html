@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+a[href^="https://www.link-group.eu"] { 
+    color: red; 
+}
+a[href^="https://www.google.com/"] { 
+    color: green; 
+}
+
+input[type="text"] {
+width: 100%;
+padding: 10px;
+border: solid 2px #c9c9c9;
+margin: 10px 0px 10px 0px;
+}
+ 
+input[type="text"]:hover{
+border: solid 2px #969696;
+}
+ 
+input[type="text"]:focus{
+border: solid 2px #262626;
+}
+
+p::after {
+content: " - NEW";
+color: yellow;
+}
+
+#flexbox1 > div {
+width: 80px;
+height: 80px;
+margin: 5px;
+}
+ 
+#flexbox1 > div:nth-child(1) {
+background-color: red;
+}
+ 
+#flexbox2 > div:nth-child(2) {
+background-color: blue;
+}
+ 
+#flexbox3 > div:nth-child(3) {
+background-color: red;
+}
+
+#flexbox4 > div:nth-child(4) {
+background-color: blue;
+}
+
+#flexbox5 > div:nth-child(5) {
+background-color: red;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank" color = "red">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+        </div>
+    </div>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+</body>
+
+</html>
